@@ -11,6 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Search.unity
     guid: 1444d74bb0e2044308c51188b8e1f92d
+  - enabled: 0
+    path: Assets/Scenes/Search.unity
+    guid: 1444d74bb0e2044308c51188b8e1f92d
+  - enabled: 0
+    path: Assets/__DELETED_GUID_Trash/78ec9799f3d7d73418e648c149074203
+    guid: 78ec9799f3d7d73418e648c149074203
   - enabled: 1
     path: Assets/Scenes/Tips val.unity
     guid: 7ebfc1d30f1354f9b94406926123d0ff
