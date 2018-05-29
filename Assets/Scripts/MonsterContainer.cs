@@ -3,9 +3,10 @@ using System.Xml;
 using System.Xml.Serialization;
 using System.IO;
 
-[XmlRoot("artikelcollection")]
-    public class MonsterContainer
-    {
+//[XmlRoot("artikelcollection")]
+public class MonsterContainer
+{
+    /*
         [XmlArray("artiklar"), XmlArrayItem("artikel")]
         public Monster[] Monsters;
 
@@ -33,4 +34,7 @@ using System.IO;
             var serializer = new XmlSerializer(typeof(MonsterContainer));
             return serializer.Deserialize(new StringReader(text)) as MonsterContainer;
         }
-    }
+        */
+
+    public Monster[] Monsters;
+}

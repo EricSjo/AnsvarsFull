@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio for Mac
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mapp uppgift 2", "Mapp uppgift 2.csproj", "{ED79CFD5-157F-610A-DD29-86B74084073C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mapp uppgift 2", "Assembly-CSharp.csproj", "{A80116C0-5326-3FA2-1A7B-9CE921BF9B14}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{ED79CFD5-157F-610A-DD29-86B74084073C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ED79CFD5-157F-610A-DD29-86B74084073C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ED79CFD5-157F-610A-DD29-86B74084073C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ED79CFD5-157F-610A-DD29-86B74084073C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A80116C0-5326-3FA2-1A7B-9CE921BF9B14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A80116C0-5326-3FA2-1A7B-9CE921BF9B14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A80116C0-5326-3FA2-1A7B-9CE921BF9B14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A80116C0-5326-3FA2-1A7B-9CE921BF9B14}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

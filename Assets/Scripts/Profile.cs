@@ -8,15 +8,12 @@ using UnityEngine.UI;
 public class Profile : MonoBehaviour {
     
     internal static Profile current;
-    public Text Pname;
-    public Text age;
-    public Text weight;
-    public Text gender;
+	public double weight;
+    public bool isMale;
 
-    public Profile(Text name, Text age, Text weight, Text gender){
-        name = this.Pname;
-        age = this.age;
+	public Profile(double weight, bool isMale){
+  
         weight = this.weight;
-        gender = this.gender;
+		isMale = this.isMale;
     }
 }

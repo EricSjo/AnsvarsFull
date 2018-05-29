@@ -3,34 +3,50 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
-
+using UnityEngine.UI;
+using System;
 
 public class SaveLoad : MonoBehaviour {
 
+    public Text Ålder;
+    public Text Vikt;
+    public Text Kön;
+    public Text LoadÅlder;
+    public Text LoadVikt;
+    public Text LoadKön;
+
+    public Text tryText;
+
+    FileStream file;
+    float v;
+    float å;
+    private string vikt, ålder, kön;
+    int on;
+
     public static List <Profile> saveProfiles = new List<Profile>();
 
-    public void Save()
+    public void Start()
     {
-        saveProfiles.Add(Profile.current);
-        BinaryFormatter bf = new BinaryFormatter();
-        FileStream file = File.Create(Application.persistentDataPath + "/savedProfiles.gd");
-        bf.Serialize(file, SaveLoad.saveProfiles);
-        file.Close();
-
-        Debug.Log("0");
+    
     }
 
-    public void Load()
+    public void LoadPlayerPrefs()
     {
-        if (File.Exists(Application.persistentDataPath + "/savedProfile.gd"))
-        {
-            BinaryFormatter bf = new BinaryFormatter();
-            FileStream file = File.Open(Application.persistentDataPath + "/savedProfile.gd", FileMode.Open);
-            SaveLoad.saveProfiles = (List<Profile>)bf.Deserialize(file);
-            file.Close();
 
-            Debug.Log("1");
-
-        }
+        PlayerPrefs.GetFloat(vikt);
+        PlayerPrefs.GetFloat(ålder);
+        PlayerPrefs.GetString(kön);
+        LoadVikt.text = v.ToString();
+        LoadÅlder.text = å.ToString();
+        LoadKön.text = kön;
+        tryText.text = on.ToString();
+    }
+    public void SavePlayerPrefs()
+    {
+        on = Int32.Parse(ålder);
+        PlayerPrefs.SetFloat(vikt, v = Convert.ToInt32(Vikt.text));
+        PlayerPrefs.SetFloat(ålder, å = Convert.ToInt32(Ålder.text));
+        PlayerPrefs.SetString(kön, Kön.text);
+        PlayerPrefs.Save();
     }
 }

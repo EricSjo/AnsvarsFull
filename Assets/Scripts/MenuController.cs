@@ -20,34 +20,29 @@ public class MenuController : MonoBehaviour
 		SceneManager.LoadScene (2);
 	}
 
-	public void Favoriter ()
+	public void Nulägeskoll ()
 	{
 		SceneManager.LoadScene (3);
 	}
 
-	public void Nulägeskoll ()
-	{
-		SceneManager.LoadScene (4);
-	}
-
 	public void Kalkylator()
 	{
-		SceneManager.LoadScene (5);
+		SceneManager.LoadScene (4);
 	}
 		
 	public void KvällsTips()
 	{
-		SceneManager.LoadScene (6);
+		SceneManager.LoadScene (5);
 	}
 
 	public void MorgonTips()
 	{
-		SceneManager.LoadScene (7);
+		SceneManager.LoadScene (6);
 	}
 
 	public void Profil ()
 	{
-		SceneManager.LoadScene (8);
+		SceneManager.LoadScene (7);
 	}
 
 	public void Avsluta()
@@ -56,6 +51,6 @@ public class MenuController : MonoBehaviour
 	}
     public void DryckInfo()
     {
-        SceneManager.LoadScene(9);
+        SceneManager.LoadScene(7);
     }
 }
